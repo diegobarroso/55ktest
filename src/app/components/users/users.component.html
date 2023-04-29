@@ -1,0 +1,31 @@
+<header>
+  <button (click)="toggleColorRows()">Color Rows</button>
+  <button (click)="sortUsers('country')">Sort by country</button>
+  <button (click)="initialState()">Initial State</button>
+  <input [(ngModel)]='filterText' type="text" placeholder="Filter by country">
+</header>
+
+<table>
+  <thead class="center">
+    <tr>
+      <th>Image</th>
+      <th (click)="sortUsers('firstName')">First name</th>
+      <th (click)="sortUsers('lastName')">Last Name</th>
+      <th (click)="sortUsers('country')">Country</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of usersCopy | filter:filterText; let i = index" [ngClass]="{'color-rows': i%2===0 && colorRows}">
+      <td class="center">
+        <img [src]="user.picture.thumbnail" alt="">
+      </td>
+      <td>{{user.name.first}}</td>
+      <td>{{user.name.last}}</td>
+      <td>{{user.location.country}}</td>
+      <td>
+        <button (click)="deleteUser(user)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
