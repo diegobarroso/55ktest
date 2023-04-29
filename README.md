@@ -27,4 +27,4 @@ Provide a README.md file with instructions on how to run the application.
 - Basic style using Axist css library
 
 ## Deploy
-[Deploy](hhttps://55ktest.vercel.app/).
+[Deploy](https://55ktest.vercel.app/).
