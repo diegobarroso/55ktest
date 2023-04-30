@@ -7,10 +7,6 @@ import { Result } from '../../models/user';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnChanges{
-  ngAfterViewInit(): void {
-    console.log(this.users);
-    
-  }
   colorRows = false;
   @Input() users!: Result[];
   usersCopy!: Result[];
