@@ -5,7 +5,7 @@
   <input [(ngModel)]='filterText' type="text" placeholder="Filter by country">
 </header>
 
-<table>
+<table *ngIf="usersCopy.length > 0; else noData">
   <thead class="center">
     <tr>
       <th>Image</th>
@@ -29,3 +29,7 @@
     </tr>
   </tbody>
 </table>
+<ng-template #noData>
+  <h2>No data found</h2>
+</ng-template>
+
