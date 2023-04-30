@@ -16,7 +16,7 @@ Here are the steps to follow:
 - [x] Sort by clicking on the column header
 Provide a README.md file with instructions on how to run the application.
 
-## For this technical test ew ise:
+## For this technical test we use:
 - Angular 15
 - Services
 - Observables
@@ -27,4 +27,4 @@ Provide a README.md file with instructions on how to run the application.
 - Basic style using Axist css library
 
 ## Deploy
-[Deploy](https://55ktest.vercel.app/).
+[Deploy](https://55ktest.vercel.app/)

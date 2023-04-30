@@ -44,10 +44,6 @@ export class UsersComponent implements OnChanges{
     }
   }
 
-  setOriginalUsers() {
-    this.usersCopy = Array.from(this.users)
-  }
-
   initialState() {
     this.usersCopy = Array.from(this.users);
   }
